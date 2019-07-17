@@ -1,0 +1,15 @@
+package adapter;
+
+/**
+ * @Author: EdenChanIy
+ * @Date: 2019/7/17 16:07
+ */
+public class WildTurkey implements Turkey {
+    public void gobble(){
+        System.out.println("Gobble gobble");
+    }
+
+    public void fly(){
+        System.out.println("I'm flying a short distance");
+    }
+}
