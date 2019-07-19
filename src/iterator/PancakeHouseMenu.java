@@ -18,12 +18,12 @@ public class PancakeHouseMenu {
         addItem("Pancake D", "a Pancake with D", true, 3.59);
     }
 
-    public void addItem(String name, String decription, boolean vegetarian, double price){
-        MenuItem menuItem = new MenuItem(name, decription, vegetarian, price);
+    public void addItem(String name, String description, boolean vegetarian, double price){
+        MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         menuItems.add(menuItem);
     }
 
-    public ArrayList getMenuItems(){
-        return menuItems;
+    public Iterator createIterator(){
+        return new PancakeHouseMenuIterator(menuItems);
     }
 }

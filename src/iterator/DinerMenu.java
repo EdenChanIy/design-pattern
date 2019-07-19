@@ -26,4 +26,8 @@ public class DinerMenu {
             menuItems[numberOfItems++] = menuItem;
         }
     }
+
+    public Iterator createIterator(){
+        return new DinerMenuIterator(menuItems);
+    }
 }
