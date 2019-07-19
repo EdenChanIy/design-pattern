@@ -1,14 +1,16 @@
 package iterator;
 
+import java.util.Iterator;
+
 /**
  * @Author: EdenChanIy
  * @Date: 2019/7/19 16:12
  */
 public class Waitress {
-    PancakeHouseMenu pancakeHouseMenu;
-    DinerMenu dinerMenu;
+    Menu pancakeHouseMenu;
+    Menu dinerMenu;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu){
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu){
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
     }
