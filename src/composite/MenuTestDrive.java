@@ -24,6 +24,7 @@ public class MenuTestDrive {
         dessertMenu.add(new MenuItem("Apple Pie", "Apple...", true, 1.59));
 
         Waitress waitress = new Waitress(allMenus);
-        waitress.printMenu();
+//        waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 }

@@ -1,5 +1,7 @@
 package composite;
 
+import java.util.Iterator;
+
 /**
  * @Author: EdenChanIy
  * @Date: 2019/7/22 10:29
@@ -38,11 +40,15 @@ public class MenuItem extends MenuComponent {
     }
 
     public void print(){
-        System.out.println(" "+getName());
+        System.out.print(" "+getName());
         if(isVegetarian()){
-            System.out.println("(v)");
+            System.out.print("(v)");
         }
         System.out.println(", "+getPrice());
         System.out.println("    -- "+getDescription());
+    }
+
+    public Iterator createIterator(){
+        return new NullIterator();
     }
 }
