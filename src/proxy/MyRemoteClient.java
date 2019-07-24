@@ -1,0 +1,25 @@
+package proxy;
+
+import java.rmi.Naming;
+
+/**
+ * @Author: EdenChanIy
+ * @Date: 2019/7/24 11:06
+ */
+public class MyRemoteClient {
+    public static void main(String[] args) {
+        new MyRemoteClient().go();
+    }
+
+    public void go(){
+        try{
+            MyRemote service = (MyRemote) Naming.lookup("rmi://127.0.0.1/RemoteHello");
+
+            String s = service.sayHello();
+
+            System.out.println(s);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
