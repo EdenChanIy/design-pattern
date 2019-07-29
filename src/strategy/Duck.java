@@ -3,6 +3,7 @@ package strategy;
 /**
  * @Author: EdenChanIy
  * @Date: 2019/7/2 11:08
+ * 定义抽象类作为超类型类，子类继承后改写方法
  */
 public abstract class Duck {
     QuackBehavior quackBehavior;
@@ -23,5 +24,5 @@ public abstract class Duck {
         //游泳方法
     }
 
-    public abstract void display();
+    public abstract void display(); //抽象方法保证子类必须重写
 }
